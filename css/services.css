@@ -1,0 +1,258 @@
+/* BANNER */
+
+.services-banner {
+
+  height: 60vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url('../images/hero.jpg') center/cover no-repeat;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.banner-content h1 {
+
+  font-size: 64px;
+
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+
+  color: #cccccc;
+
+  font-size: 20px;
+}
+
+/* INTRO */
+
+.services-intro {
+
+  text-align: center;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.intro-text h2 {
+
+  font-size: 48px;
+
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+
+  color: #cccccc;
+
+  line-height: 1.9;
+
+  font-size: 18px;
+}
+
+/* SERVICES GRID */
+
+.services-grid {
+
+  display: grid;
+
+  gap: 40px;
+
+  padding: 100px 8%;
+}
+
+/* CARD */
+
+.service-card {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #1a1a1a;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  transition: 0.4s;
+}
+
+.service-card:hover {
+
+  transform: translateY(-10px);
+}
+
+/* IMAGE */
+
+.service-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.service-content {
+
+  padding: 50px;
+}
+
+.service-content h3 {
+
+  font-size: 36px;
+
+  margin-bottom: 20px;
+
+  color: #ff7a00;
+}
+
+.service-content p {
+
+  color: #cccccc;
+
+  line-height: 1.8;
+
+  margin-bottom: 25px;
+}
+
+.service-content ul {
+
+  list-style: none;
+}
+
+.service-content ul li {
+
+  margin-bottom: 15px;
+
+  color: #ffffff;
+
+  position: relative;
+
+  padding-left: 25px;
+}
+
+.service-content ul li::before {
+
+  content: '✓';
+
+  position: absolute;
+
+  left: 0;
+
+  color: #ff7a00;
+}
+
+/* PROCESS SECTION */
+
+.process-section {
+
+  background: #181818;
+
+  text-align: center;
+}
+
+.process-section h2 {
+
+  font-size: 48px;
+
+  margin-bottom: 60px;
+}
+
+.process-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 30px;
+}
+
+.process-card {
+
+  background: #222;
+
+  padding: 40px;
+
+  border-radius: 12px;
+}
+
+.process-card span {
+
+  font-size: 48px;
+
+  font-weight: 800;
+
+  color: #ff7a00;
+}
+
+.process-card h3 {
+
+  margin: 20px 0;
+}
+
+/* CTA */
+
+.services-cta {
+
+  text-align: center;
+
+  padding: 120px 8%;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)),
+    url('../images/project1.jpg') center/cover no-repeat;
+}
+
+.services-cta h2 {
+
+  font-size: 48px;
+
+  margin-bottom: 20px;
+}
+
+.services-cta p {
+
+  color: #cccccc;
+
+  margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+
+  .service-card,
+  .process-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .banner-content h1,
+  .intro-text h2,
+  .process-section h2,
+  .services-cta h2 {
+
+    font-size: 36px;
+  }
+
+  .service-content {
+
+    padding: 30px;
+  }
+}

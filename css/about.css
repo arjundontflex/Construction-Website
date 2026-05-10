@@ -1,3 +1,20 @@
+/* PAGE BANNER */
+
+.page-banner {
+  margin-top: 100px;
+  height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 64px;
+}
+
 /* ABOUT PAGE */
 
 .about-page {

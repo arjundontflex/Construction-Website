@@ -320,20 +320,41 @@
   text-align: center;
 
   background: #181818;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 40px;
+
+  align-items: start;
 }
 
-.map-section h2 {
+.map-section > h2 {
+
+  grid-column: 1 / -1;
 
   font-size: 48px;
 
   margin-bottom: 15px;
 }
 
-.map-section p {
+.map-section > p {
+
+  grid-column: 1 / -1;
 
   color: #cccccc;
 
   margin-bottom: 40px;
+}
+
+.map-section > div h3 {
+
+  font-size: 28px;
+
+  margin-bottom: 20px;
+
+  color: #ff7a00;
 }
 
 .map-container {
